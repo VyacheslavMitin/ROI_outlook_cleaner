@@ -2,10 +2,11 @@ import pyautogui as pg
 import time
 import keyboard
 
-LIMIT = 500  # количество раз
+LIMIT = 2000  # количество раз
 
 time.sleep(5)  # таймаут для на переключение в аутлук
-print(f"Старт начала работы скрипта по удалению писем {LIMIT} раз")
+
+print("Старт начала работы скрипта по удалению писем\n")
 
 for i in range(LIMIT):
     # СТАРЫЙ КОД
@@ -22,6 +23,7 @@ for i in range(LIMIT):
     # time.sleep(0.1 )
     # pg.press('space')
 
+    print(f"Исполнение {i} из {LIMIT}")
     pg.press ('delete')  # достаточно одного делита
 
 
